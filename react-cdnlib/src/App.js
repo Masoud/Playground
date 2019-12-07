@@ -1,17 +1,13 @@
 import React, { Component } from 'react'
-import Topnavigation from './Navigation'
-import Titles from './Titles'
-import Search from './Search'
+import Header from './Header'
+import Favorites from './Favorites'
 
 class App extends Component {
     render() {
         return (
-            <div className="menu_bg_arvan">
-                <div className="container">
-                    <Topnavigation />
-                    <Titles />
-                    <Search />
-                </div>
+            <div>
+                <Header />
+                <Favorites />
             </div>
         )
     }

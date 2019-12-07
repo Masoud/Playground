@@ -1,3 +1,11 @@
+body {
+  font-family: "Lato";
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #f0f2f5;
+  margin-top: -20px;
+}
 .menu_bg_arvan {
   background: #20c5ba;
   width: 100%;
@@ -99,4 +107,14 @@ button.icon-search {
   height: 30px;
   margin-top: 22px;
   margin-left: 16px;
+}
+.favorits {
+  width: 100%;
+  float: right;
+  background: #fff;
+  padding: 25px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
