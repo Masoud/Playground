@@ -29,17 +29,20 @@ class Search extends Component {
         });
     }
 
-
-
     afterSetStateFinished() {
-        alert('hi');
+        trigger(this.props.toggleShow);
     }
+  
 
     render() {
         return (
             <div className="row">
+    
+                <button onClick={this.props.toggleShow}>
+button
+                </button>
                 <form className="search_body">
-                    <input className="search_tx" type="text" placeholder="Search Any Libraries ..."
+                    <input className="search_tx" type="text" placeholder="sa"
                         value={this.state.value}
                         onKeyDown={this.SearchIT}
                     />
