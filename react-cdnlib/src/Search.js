@@ -8,7 +8,7 @@ class Search extends Component {
         this.SearchIT = this.SearchIT.bind(this);
     }
 
-    state= {
+    state = {
         search: '',
         typing: false,
         typingTimeout: 0
@@ -25,26 +25,26 @@ class Search extends Component {
             typing: false,
             typingTimeout: setTimeout(function () {
                 self.afterSetStateFinished();
-            }, 1500)
+            },1500)
         });
     }
 
     afterSetStateFinished() {
-        trigger(this.props.toggleShow);
+        if (this.state.search != '') {
+            this.props.toggleShow.show();
+        }else {
+            this.props.toggleShow.hide();
+        }
+        console.log(this.state.search);
     }
-  
 
     render() {
         return (
             <div className="row">
-    
-                <button onClick={this.props.toggleShow}>
-button
-                </button>
                 <form className="search_body">
                     <input className="search_tx" type="text" placeholder="sa"
                         value={this.state.value}
-                        onKeyDown={this.SearchIT}
+                        onKeyUp={this.SearchIT}
                     />
                     <button className="icon-search" value=" " type="submit"></button>
                 </form>
