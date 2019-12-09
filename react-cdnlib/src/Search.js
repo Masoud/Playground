@@ -25,7 +25,7 @@ class Search extends Component {
             typing: false,
             typingTimeout: setTimeout(function () {
                 self.afterSetStateFinished();
-            },1500)
+            },500)
         });
     }
 
@@ -35,7 +35,6 @@ class Search extends Component {
         }else {
             this.props.toggleShow.hide();
         }
-        console.log(this.state.search);
     }
 
     render() {
