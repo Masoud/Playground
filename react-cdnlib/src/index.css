@@ -117,4 +117,83 @@ button.icon-search {
   border-radius: 4px;
   margin-bottom: 20px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+}
+.favorits .section {
+  margin: 0px 0px 50px;
+}
+.favorits .section.fonts table {
+  background: none !important;
+}
+.favorits .section.fonts tr {
+  float: left;
+  margin: 0px 10px;
+  background: #f9f9f9;
+  width: 252px;
+  margin-bottom: 10px;
+}
+.favorits .section.fonts tr:hover {
+  background: #efeeee;
+}
+.favorits .section:last-child {
+  margin: 0px;
+}
+.favorits .section .title {
+  border-bottom: 1px solid #0000002e;
+  margin-bottom: 20px;
+}
+.favorits .section .title a {
+  float: right;
+  position: relative;
+  margin-top: -25px;
+}
+.favorits .section .title h2 {
+  font-size: 25px;
+}
+.favorits .section table {
+  width: 100%;
+  background: #f9f9f9;
+  border-radius: 10px;
+}
+.favorits .section table tr {
+  width: 100%;
+  border-bottom: 1px solid #00000014;
+}
+.favorits .section table tr:hover {
+  background: #efeeee;
+}
+.favorits .section table tr:hover th {
+  background: #34495d;
+}
+.favorits .section table tr:last-child {
+  border: none;
+}
+.favorits .section table thead {
+  background: #34495e;
+  color: #fff;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.favorits .section table thead tr {
+  border: none;
+}
+.favorits .section table thead th {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px;
+}
+.favorits .section table thead th:first-child {
+  -webkit-border-top-left-radius: 10px;
+  -moz-border-radius-topleft: 10px;
+  border-top-left-radius: 10px;
+  width: 35%;
+}
+.favorits .section table thead th:last-child {
+  -webkit-border-top-right-radius: 10px;
+  -moz-border-radius-topright: 10px;
+  border-top-right-radius: 10px;
+}
+.favorits .section table tbody td {
+  padding: 10px;
+  font-size: 15px;
 }
