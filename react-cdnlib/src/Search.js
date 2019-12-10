@@ -25,27 +25,36 @@ class Search extends Component {
             typing: false,
             typingTimeout: setTimeout(function () {
                 self.afterSetStateFinished();
-            },500)
+            }, 500)
         });
     }
 
     afterSetStateFinished() {
         if (this.state.search != '') {
-            this.props.toggleShow.show();
-        }else {
-            this.props.toggleShow.hide();
+            console.log(this.props);
+            this.props.toggleShow.showSearchResult.show();
+            this.props.toggleShow.searchingFor(this.state.search);
+        } else {
+            this.props.toggleShow.showSearchResult.hide();
+            this.props.toggleShow.searchingFor(this.state.search);
         }
     }
-
     render() {
         return (
             <div className="row">
                 <form className="search_body">
-                    <input className="search_tx" type="text" placeholder="sa"
+                    <input
+                        className="search_tx"
+                        type="text"
+                        placeholder="sa"
                         value={this.state.value}
                         onKeyUp={this.SearchIT}
                     />
-                    <button className="icon-search" value=" " type="submit"></button>
+                    <button
+                        className="icon-search"
+                        value=""
+                        type="submit"
+                    />
                 </form>
             </div>
         )
