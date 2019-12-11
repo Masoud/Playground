@@ -250,29 +250,37 @@ button.icon-search {
 .footerMenu {
     background: #0b3a42;
     padding   : 60px 0px;
+
+    ul {
+        li {
+            padding-left: 12px;
+            display     : block;
+            position    : relative;
+
+            &.title {
+                color        : #00E8DD;
+                margin-bottom: 17px;
+                font-size    : 12px;
+                font-weight  : 600;
+                margin-left  : 0px;
+                list-style   : none;
+            }
+
+            a {
+                color     : #F2F2F2;
+                font-size : 12px;
+                transition: padding 200ms ease-in-out;
+                cursor    : pointer;
+
+                &:hover {
+                    padding-left   : .625rem;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
 }
 
-.footerMenu li.title {
-    color        : #00E8DD;
-    margin-bottom: 17px;
-    font-size    : 12px;
-    font-weight  : 600;
-    margin-left  : 0px;
-    list-style   : none;
-}
-
-.footerMenu ul li a {
-    color     : #F2F2F2;
-    font-size : 12px;
-    transition: padding 200ms ease-in-out;
-    cursor    : pointer;
-}
-
-.footerMenu ul li {
-    padding-left: 12px;
-    display     : block;
-    position    : relative;
-}
 
 .footerMenu ul li a::before {
     content         : "";
@@ -290,51 +298,43 @@ button.icon-search {
     max-width: 20%;
 }
 
-.footerMenu ul li a:hover {
-    padding-left   : .625rem;
-    text-decoration: none;
-}
 
 .footer {
     background: #072027;
     padding   : 70px 0px;
-}
 
-.logoFooter {
-    margin-bottom: 40px;
-    align-items  : flex-end;
-}
+    .logoFooter {
+        margin-bottom: 40px;
+        align-items  : flex-end;
 
-.logoFooter img {
-    width : 174px;
-    height: 20px;
+        img {
+            width : 174px;
+            height: 20px;
+        }
+    }
 }
 
 .socialFooter {
     width     : 100%;
     text-align: right;
-}
 
-.socialFooter ul {
-    margin : 0px;
-    padding: 0px;
-}
+    ul {
+        margin : 0px;
+        padding: 0px;
 
-.socialFooter ul li {}
+        li {
+            display: inline;
+            padding: 0px 20px;
 
-.socialFooter ul li a svg {
-    width : 100px;
-    height: 100px;
-}
+            a {
+                img {
+                    width : 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
 
-.socialFooter ul li a img {
-    width : 30px;
-    height: 30px;
-}
-
-.socialFooter ul li {
-    display: inline;
-    padding: 0px 20px;
 }
 
 
@@ -398,78 +398,80 @@ button.icon-search {
     position: absolute;
     left    : -5000px;
 }
+
 .footer__nwsl {
-    width: 250px;
-    border: 1px solid #00baba;
-    border-radius: 5px;
-    color: white;
-    overflow: hidden;
-    display: flex;
+    width         : 250px;
+    border        : 1px solid #00baba;
+    border-radius : 5px;
+    color         : white;
+    overflow      : hidden;
+    display       : flex;
     flex-direction: row;
-    margin-top: 40px;
-    margin-bottom: 30px;
-    align-items: stretch;
-    line-height: 1.5;
-    direction: ltr;
-  }
-  
-  .footer__nwsl__input {
-    border: none;
+    margin-top    : 40px;
+    margin-bottom : 30px;
+    align-items   : stretch;
+    line-height   : 1.5;
+    direction     : ltr;
+}
+
+.footer__nwsl__input {
+    border          : none;
     background-color: transparent;
-    font-size: 12px;
-    text-align: left;
-    width: calc(100% - 55px);
-    padding-right: 8px;
-    padding-left: 8px;
-    padding-top: 0px;
-    padding-bottom: 0px;
-    color: white;
-  }
-  
-  .footer__nwsl__input::-webkit-input-placeholder {
+    font-size       : 12px;
+    text-align      : left;
+    width           : calc(100% - 55px);
+    padding-right   : 8px;
+    padding-left    : 8px;
+    padding-top     : 0px;
+    padding-bottom  : 0px;
+    color           : white;
+}
+
+.footer__nwsl__input::-webkit-input-placeholder {
     color: #F2F2F299;
-  }
-  
-  .footer__nwsl__input::-moz-placeholder {
+}
+
+.footer__nwsl__input::-moz-placeholder {
     color: #F2F2F299;
-  }
-  
-  .footer__nwsl__input:-ms-input-placeholder {
+}
+
+.footer__nwsl__input:-ms-input-placeholder {
     color: #F2F2F299;
-  }
-  
-  .footer__nwsl__input::-ms-input-placeholder {
+}
+
+.footer__nwsl__input::-ms-input-placeholder {
     color: #F2F2F299;
-  }
-  
-  .footer__nwsl__input::placeholder {
+}
+
+.footer__nwsl__input::placeholder {
     color: #F2F2F299;
-  }
-  
-  .footer__nwsl__input:focus {
+}
+
+.footer__nwsl__input:focus {
     outline: none;
-  }
-  
-  .footer__nwsl__btn {
+}
+
+.footer__nwsl__btn {
     background-color: #00baba;
-    border: none;
-    color: #062026;
-    height: 30px;
-    width: 55px;
-    font-size: 13px;
-    font-weight: 600;
-    transition: 200ms background-color ease-in-out;
-    cursor: pointer;
-  }
-  
-  .footer__nwsl__btn:hover {
+    border          : none;
+    color           : #062026;
+    height          : 30px;
+    width           : 55px;
+    font-size       : 13px;
+    font-weight     : 600;
+    transition      : 200ms background-color ease-in-out;
+    cursor          : pointer;
+}
+
+.footer__nwsl__btn:hover {
     background-color: #00b0b0;
-  }
-  .nwsl-name {
+}
+
+.nwsl-name {
     display: none;
 }
-  
+
 form#nwsl_form {
-    float: right;
+    float       : right;
     margin-right: 20px;
 }

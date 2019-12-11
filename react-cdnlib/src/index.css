@@ -208,7 +208,12 @@ button.icon-search {
   background: #0b3a42;
   padding: 60px 0px;
 }
-.footerMenu li.title {
+.footerMenu ul li {
+  padding-left: 12px;
+  display: block;
+  position: relative;
+}
+.footerMenu ul li.title {
   color: #00E8DD;
   margin-bottom: 17px;
   font-size: 12px;
@@ -222,10 +227,9 @@ button.icon-search {
   transition: padding 200ms ease-in-out;
   cursor: pointer;
 }
-.footerMenu ul li {
-  padding-left: 12px;
-  display: block;
-  position: relative;
+.footerMenu ul li a:hover {
+  padding-left: 0.625rem;
+  text-decoration: none;
 }
 .footerMenu ul li a::before {
   content: "";
@@ -241,19 +245,15 @@ button.icon-search {
   flex: 0 0 20%;
   max-width: 20%;
 }
-.footerMenu ul li a:hover {
-  padding-left: 0.625rem;
-  text-decoration: none;
-}
 .footer {
   background: #072027;
   padding: 70px 0px;
 }
-.logoFooter {
+.footer .logoFooter {
   margin-bottom: 40px;
   align-items: flex-end;
 }
-.logoFooter img {
+.footer .logoFooter img {
   width: 174px;
   height: 20px;
 }
@@ -265,17 +265,13 @@ button.icon-search {
   margin: 0px;
   padding: 0px;
 }
-.socialFooter ul li a svg {
-  width: 100px;
-  height: 100px;
+.socialFooter ul li {
+  display: inline;
+  padding: 0px 20px;
 }
 .socialFooter ul li a img {
   width: 30px;
   height: 30px;
-}
-.socialFooter ul li {
-  display: inline;
-  padding: 0px 20px;
 }
 .footer__info {
   direction: ltr;

@@ -31,11 +31,11 @@ class App extends Component {
         if (!isSearching) {
             favorits = <Favorites />
         } else {
-            searchResult = <Searchresults searching={this.state.message}/>
+            searchResult = <Searchresults searching={this.state.message} />
         }
         return (
             <div>
-                <Header showSearchResult={Results} searchFor={this.searchingFor}/>
+                <Header showSearchResult={Results} searchFor={this.searchingFor} />
                 {favorits}
                 {searchResult}
                 <Footer />
